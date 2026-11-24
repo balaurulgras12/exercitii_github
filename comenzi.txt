@@ -1,0 +1,58 @@
+# Versiunea de git
+git --version
+git -v
+
+# Initializare proiect git (local)
+git init 
+
+# Pentru a vedea statusul fisierelor
+git status
+
+# Exista 3 stari in care un fisier se poate afla
+## untracked-modified / staged / commit
+
+# Principale 3 comenzi de creare a unui commit
+git add .
+git add numefisier
+
+git commit -m "nume mesaj"
+git commit --message "nume mesaj"
+
+git push
+
+
+# Pentru a vizualiza branch-urile existente
+git branch
+
+# Pentru a redenumi branch-ul existent
+git branch -M  noulNume
+
+# Pentru a schimba branch-ul (a trece de pe unul pe altul)
+git checkout numeBranchPeCareTrec
+
+# Pentru a crea un nou branch
+git branch numeDeBranchNou
+
+# Pentru a adauga un link de server pentru repo-ul nostru
+git remote add origin https://github.com/handle/link-creat-din-github.com
+
+# Pentru a trimite branch-ul pe server
+git push --set-upstream origin main
+
+
+# Comenzi de setare a contului
+# Pentru a citi username-ul si nume dintr-un repo
+git config user.name
+git config user.email 
+
+# Pentru a le DEFINI username-ul si nume dintr-un repo
+git config user.name NOUL_NUME
+git config user.email  NOUL_EMAIL
+
+# Pentru a citi username-ul si nume LA NIVEL global
+git config --global user.name
+git config --global user.email 
+
+# Pentru a le DEFINI username-ul si nume LA NIVEL global
+git config --global user.name NOUL_NUME
+git config --global user.email  NOUL_EMAIL
