@@ -14,6 +14,3 @@ class Ticket:
                     player_numbers.append(number)
         
         return player_numbers
-    
-ticket1 = Ticket()
-print(ticket1.numbers)
